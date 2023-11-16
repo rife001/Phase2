@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTM GALA Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">MTM 2024 GALA Calculator</h1>
+        <form id="gala-form">
+            <div class="row">
+                <!-- Estimated Costs Column -->
+                <div class="col-md-6">
+                    <h3>Estimated Costs</h3>
+                    <!-- Material Category -->
+                    <div class="form-group">
+                        <label for="estimated-venue-rental">Venue Rental</label>
+                        <input type="number" class="form-control" id="estimated-venue-rental" placeholder="Enter cost">
+                    </div>
+                    <div class="form-group">
+                        <label for="estimated-beverages">Beverage Cost</label>
+                        <input type="number" class="form-control" id="estimated-beverages" placeholder="Enter cost">
+                    </div>
+                    <div class="form-group">
+                        <label for="estimated-food">Food Cost</label>
+                        <input type="number" class="form-control" id="estimated-food" placeholder="Enter cost">
+                    </div>
+                    <!-- Labor Category -->
+                    <div class="form-group">
+                        <label for="estimated-event-coordinator-hours">Event Coordinator (Hours)</label>
+                        <input type="number" class="form-control" id="estimated-event-coordinator-hours" placeholder="Enter hours">
+                    </div>
+                    <div class="form-group">
+                        <label for="estimated-bartender-server-hours">Bartender/Server (Hours)</label>
+                        <input type="number" class="form-control" id="estimated-bartender-server-hours" placeholder="Enter hours">
+                    </div>
+        
+                    <!-- Insurance Category -->
+                    <div class="form-group">
+                        <label for="estimated-insurance">Event Insurance</label>
+                        <input type="number" class="form-control" id="estimated-insurance" placeholder="Enter cost">
+                    </div>
+                    <!-- Overage Category -->
+                    <div class="form-group">
+                        <label for="estimated-material-overage">Materials Overage</label>
+                        <input type="number" class="form-control" id="estimated-material-overage" placeholder="Enter cost">
+                    </div>
+                </div>
+
+                <!-- Actual Costs Column -->
+                <div class="col-md-6">
+                    <h3>Actual Costs</h3>
+                    <!-- Material Category -->
+                    <div class="form-group">
+                        <label for="actual-venue-rental">Venue Rental</label>
+                        <input type="number" class="form-control" id="actual-venue-rental" placeholder="Enter cost">
+                    </div>
+                    <div class="form-group">
+                        <label for="actual-beverages">Beverage Cost</label>
+                        <input type="number" class="form-control" id="actual-beverages" placeholder="Enter cost">
+                    </div>
+                    <div class="form-group">
+                        <label for="actual-food">Food Cost</label>
+                        <input type="number" class="form-control" id="actual-food" placeholder="Enter cost">
+                    </div>
+                    <!-- Labor Category -->
+                    <div class="form-group">
+                        <label for="actual-event-coordinator-hours">Event Coordinator (Hours)</label>
+                        <input type="number" class="form-control" id="actual-event-coordinator-hours" placeholder="Enter hours">
+                    </div>
+                    <div class="form-group">
+                        <label for="actual-bartender-server-hours">Bartender/Server (Hours)</label>
+                        <input type="number" class="form-control" id="actual-bartender-server-hours" placeholder="Enter hours">
+                    </div>
+                    <!-- Insurance Category -->
+                    <div class="form-group">
+                        <label for="actual-insurance">Event Insurance</label>
+                        <input type="number" class="form-control" id="actual-insurance" placeholder="Enter cost">
+                    </div>
+                    <!-- Overage Category -->
+                    <div class="form-group">
+                        <label for="actual-material-overage">Materials Overage</label>
+                        <input type="number" class="form-control" id="actual-material-overage" placeholder="Enter cost">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="calculate-btn">Calculate Total</button>
+        </form>
+        <div id="total-result" class="mt-3"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
